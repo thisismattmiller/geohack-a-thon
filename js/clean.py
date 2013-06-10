@@ -1,0 +1,7 @@
+f = open('BigTheaters.js')
+contents = f.read()
+f.close()
+new_contents = contents.replace('\n', '')
+f = open('BigTheatersClean.js', 'w')
+f.write(new_contents)
+f.close()
